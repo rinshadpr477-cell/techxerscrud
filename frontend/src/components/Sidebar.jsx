@@ -4,9 +4,9 @@ import { checkHealth } from '../services/api';
 const BACKEND_URL = 'http://localhost:3006';
 
 export default function Sidebar({ activeView, onNavigate }) {
-  const [isConnected, setIsConnected] = useState(null); // null = checking
+  const [isConnected, setIsConnected] = useState(null); 
 
-  // Poll backend health every 10 seconds
+  
   useEffect(() => {
     let mounted = true;
 
@@ -59,7 +59,7 @@ export default function Sidebar({ activeView, onNavigate }) {
           </div>
           <div>
             <p className="text-white font-semibold text-sm leading-tight">User Management</p>
-            <p className="text-slate-500 text-xs">CRUD Assignment</p>
+           
           </div>
         </div>
       </div>
